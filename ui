@@ -85,7 +85,7 @@ function ui:CreateWindow(options)
 		BackgroundTransparency = 0,
 		Size = UDim2.new(0, 190, 0, 30),
 		Position = UDim2.new(0, (15 + ((200 * self.windowcount) - 200)), 0, 15),
-		BackgroundColor3 = options.barcolor,
+		BackgroundColor3 = Color3.fromRGB(0,126,126),
 		BorderSizePixel = 0
 	})
 
@@ -93,7 +93,7 @@ function ui:CreateWindow(options)
 		Name = 'Background',
 		Parent = window.frame,
 		BorderSizePixel = 0,
-		BackgroundColor3 = options.bgcolor,
+		BackgroundColor3 = Color3.fromRGB(0,139,139),
 		Position = UDim2.new(0, 0, 1, 0),
 		Size = UDim2.new(1, 0, 0, 25),
 		ClipsDescendants = true
@@ -103,7 +103,7 @@ function ui:CreateWindow(options)
 		Name = 'Container',
 		Parent = window.frame,
 		BorderSizePixel = 0,
-		BackgroundColor3 = options.bgcolor,
+		BackgroundColor3 = Color3.fromRGB(0,139,139),
 		Position = UDim2.new(0, 0, 1, 0),
 		Size = UDim2.new(1, 0, 0.3, 0),
 		ClipsDescendants = true
@@ -127,7 +127,7 @@ function ui:CreateWindow(options)
 		Size = UDim2.new(1, 0, 0, 1),
 		Position = UDim2.new(0, 0, 1, -1),
 		BorderSizePixel = 0,
-		BackgroundColor3 = options.underline,
+		BackgroundColor3 = Color3.fromRGB(0, 0, 0),
 		Parent = window.frame
 	})
 
@@ -240,7 +240,7 @@ function ui:CreateWindow(options)
 			PlaceholderText = text,
 			Size = UDim2.new(1, -10, 0, 20),
 			BackgroundTransparency = 0.75,
-			BackgroundColor3 = options.boxcolor,
+			BackgroundColor3 = Color3.fromRGB(0,139,139),
 			TextColor3 = Color3.fromRGB(255, 255, 255),
 			TextXAlignment = Enum.TextXAlignment.Center,
 			TextSize = 16,
@@ -267,7 +267,7 @@ function ui:CreateWindow(options)
 			Text =  text,
 			Size = UDim2.new(1, -10, 0, 20),
 			BackgroundTransparency = 0,
-			BackgroundColor3 = Color3.fromRGB(0,126,126),
+			BackgroundColor3 = Color3.fromRGB(0,139,139),
 			BorderColor3 = Color3.fromRGB(0,126,126),
 			TextColor3 = Color3.fromRGB(255, 255, 255),
 			TextXAlignment = Enum.TextXAlignment.Center,
@@ -336,7 +336,7 @@ function ui:CreateWindow(options)
 		local dropdown = ui:Create('TextLabel', {
 			Size = UDim2.new(1, -10, 0, 20),
 			BackgroundTransparency = 0.75,
-			BackgroundColor3 = options.boxcolor,
+			BackgroundColor3 = Color3.fromRGB(0,139,139),
 			TextColor3 = Color3.fromRGB(255, 255, 255),
 			TextXAlignment = Enum.TextXAlignment.Center,
 			TextSize = 16,
