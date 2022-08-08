@@ -267,7 +267,7 @@ function ui:CreateWindow(options)
 			Text =  text,
 			Size = UDim2.new(1, -10, 0, 20),
 			BackgroundTransparency = 0,
-			BackgroundColor3 = Color3.fromRGB(0,139,139),
+			BackgroundColor3 = Color3.fromRGB(0,126,126),
 			BorderColor3 = Color3.fromRGB(0,126,126),
 			TextColor3 = Color3.fromRGB(255, 255, 255),
 			TextXAlignment = Enum.TextXAlignment.Center,
