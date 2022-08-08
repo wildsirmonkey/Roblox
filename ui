@@ -267,8 +267,8 @@ function ui:CreateWindow(options)
 			Text =  text,
 			Size = UDim2.new(1, -10, 0, 20),
 			BackgroundTransparency = 0,
-			BackgroundColor3 = Color3.fromRGB(50,50,50),
-			BorderColor3 = Color3.fromRGB(150,150,150),
+			BackgroundColor3 = Color3.fromRGB(0,126,126),
+			BorderColor3 = Color3.fromRGB(0,126,126),
 			TextColor3 = Color3.fromRGB(255, 255, 255),
 			TextXAlignment = Enum.TextXAlignment.Center,
 			TextSize = 16,
@@ -290,8 +290,8 @@ function ui:CreateWindow(options)
 			Text =  text,
 			Size = UDim2.new(1, -10, 0, 20),
 			BackgroundTransparency = 0,
-			BackgroundColor3 = Color3.fromRGB(65,65,65),
-			BorderColor3 = Color3.fromRGB(150,150,150),
+			BackgroundColor3 = Color3.fromRGB(0,126,126),
+			BorderColor3 = Color3.fromRGB(0,126,126),
 			BorderSizePixel = 0,
 			TextColor3 = Color3.fromRGB(255, 255, 255),
 			TextXAlignment = Enum.TextXAlignment.Center,
@@ -389,7 +389,7 @@ function ui:CreateWindow(options)
 
 			frame = ui:Create('Frame', {
 				Position = UDim2.new(0, 0, 1, 0),
-				BackgroundColor3 = Color3.fromRGB(40, 40, 40),
+				BackgroundColor3 = Color3.fromRGB(0,126,126),
 				Size = UDim2.new(0, dropdown.AbsoluteSize.X, 0, (count(options) * 21)),
 				BorderSizePixel = 0,
 				Parent = dropdown,
@@ -405,7 +405,7 @@ function ui:CreateWindow(options)
 			for i, option in next, options do
 				local selection = ui:Create('TextButton', {
 					Text = option,
-					BackgroundColor3 = Color3.fromRGB(40, 40, 40),
+					BackgroundColor3 = Color3.fromRGB(0,126,126),
 					TextColor3 = Color3.fromRGB(255, 255, 255),
 					BorderSizePixel = 0,
 					TextSize = 16,
