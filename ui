@@ -46,9 +46,9 @@ end
 
 local defaults = {
 	txtcolor = Color3.fromRGB(255, 255, 255),
-	underline = Color3.fromRGB(0, 255, 140),
-	barcolor = Color3.fromRGB(22,83,126),
-	bgcolor = Color3.fromRGB(0, 103, 106)
+	underline = Color3.fromRGB(0, 0, 0),
+	barcolor = Color3.fromRGB(0,126,126),
+	bgcolor = Color3.fromRGB(0,139,139)
 }
 
 function ui:Create(class, props)
