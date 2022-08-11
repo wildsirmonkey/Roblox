@@ -92,7 +92,7 @@ local function SAMH_fake_script() -- main.LocalScript
 	-- Visibility
 	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
 		key = key:lower() -- i do this in all my key events, though i don't remember why
-		if key == 'r' then -- if key pressed is h
+		if key == 't' then -- if key pressed is h
 			frame.Visible = not frame.Visible -- flip between visible/invisible
 		end
 	end)
