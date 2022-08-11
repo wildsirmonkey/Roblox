@@ -1,0 +1,101 @@
+-- Made by wilsirmonkey#0722
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local Script1 = Instance.new("TextButton")
+local Script3 = Instance.new("TextButton")
+local Script2 = Instance.new("TextButton")
+local Script4 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 139, 139)
+main.Position = UDim2.new(0.727984309, 0, 0.436420709, 0)
+main.Size = UDim2.new(0, 199, 0, 125)
+
+Label.Name = "Label"
+Label.Parent = main
+Label.BackgroundColor3 = Color3.fromRGB(0, 126, 126)
+Label.Size = UDim2.new(0, 200, 0, 18)
+Label.Font = Enum.Font.SourceSans
+Label.Text = "Epsilon 2"
+Label.TextColor3 = Color3.fromRGB(0, 0, 0)
+Label.TextSize = 14.000
+
+Script1.Name = "Script1"
+Script1.Parent = main
+Script1.BackgroundColor3 = Color3.fromRGB(0, 126, 126)
+Script1.Position = UDim2.new(0.160804018, 0, 0.247999996, 0)
+Script1.Size = UDim2.new(0, 134, 0, 18)
+Script1.Font = Enum.Font.SourceSans
+Script1.Text = "No Fog"
+Script1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Script1.TextSize = 14.000
+Script1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/wildsirmonkey/Roblox/main/GGBALLS/foggy.txt'))()
+end)
+
+Script3.Name = "Script3"
+Script3.Parent = main
+Script3.BackgroundColor3 = Color3.fromRGB(0, 126, 126)
+Script3.Position = UDim2.new(0.160804018, 0, 0.615999997, 0)
+Script3.Size = UDim2.new(0, 134, 0, 18)
+Script3.Font = Enum.Font.SourceSans
+Script3.Text = "ESP"
+Script3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Script3.TextSize = 14.000
+Script3.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/wildsirmonkey/Roblox/main/GGBALLS/seeyou'))()
+end)
+
+Script2.Name = "Script2"
+Script2.Parent = main
+Script2.BackgroundColor3 = Color3.fromRGB(0, 126, 126)
+Script2.Position = UDim2.new(0.160804018, 0, 0.423999995, 0)
+Script2.Size = UDim2.new(0, 134, 0, 18)
+Script2.Font = Enum.Font.SourceSans
+Script2.Text = "Crash Server (Spam)"
+Script2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Script2.TextSize = 14.000
+Script2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/wildsirmonkey/Roblox/main/GGBALLS/nocrashpls'))()
+end)
+
+
+Script4.Name = "Script4"
+Script4.Parent = main
+Script4.BackgroundColor3 = Color3.fromRGB(0, 126, 126)
+Script4.Position = UDim2.new(0.160804018, 0, 0.807999969, 0)
+Script4.Size = UDim2.new(0, 134, 0, 18)
+Script4.Font = Enum.Font.SourceSans
+Script4.Text = "Instant Log"
+Script4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Script4.TextSize = 14.000
+Script4.MouseButton1Down:connect(function()
+	game:GetService("Players").LocalPlayer:Kick("You instant logged!")
+end)
+
+
+-- Scripts:
+
+local function SAMH_fake_script() -- main.LocalScript 
+	local script = Instance.new('LocalScript', main)
+
+	local frame = script.Parent -- path to the frame
+	local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+	
+	-- Visibility
+	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+		key = key:lower() -- i do this in all my key events, though i don't remember why
+		if key == 'r' then -- if key pressed is h
+			frame.Visible = not frame.Visible -- flip between visible/invisible
+		end
+	end)
+	
+end
+coroutine.wrap(SAMH_fake_script)()
