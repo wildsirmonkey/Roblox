@@ -1,3 +1,5 @@
+--Hood Modded
+
 local Settings = {
     AimLock = {
         Enabled = true,
