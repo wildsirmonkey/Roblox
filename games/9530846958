@@ -1,4 +1,7 @@
--- Made by wilsirmonkey#0722
+--Epsilon 2
+-- made by wildsirmonkey#0722
+
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -7,6 +10,7 @@ local Script1 = Instance.new("TextButton")
 local Script3 = Instance.new("TextButton")
 local Script2 = Instance.new("TextButton")
 local Script4 = Instance.new("TextButton")
+local Script5 = Instance.new("TextButton")
 
 --Properties:
 
@@ -16,7 +20,7 @@ main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(0, 139, 139)
 main.Position = UDim2.new(0.727984309, 0, 0.436420709, 0)
-main.Size = UDim2.new(0, 199, 0, 125)
+main.Size = UDim2.new(0, 199, 0, 152)
 
 Label.Name = "Label"
 Label.Parent = main
@@ -30,7 +34,7 @@ Label.TextSize = 14.000
 Script1.Name = "Script1"
 Script1.Parent = main
 Script1.BackgroundColor3 = Color3.fromRGB(0, 126, 126)
-Script1.Position = UDim2.new(0.160804018, 0, 0.247999996, 0)
+Script1.Position = UDim2.new(0.160804018, 0, 0.165684208, 0)
 Script1.Size = UDim2.new(0, 134, 0, 18)
 Script1.Font = Enum.Font.SourceSans
 Script1.Text = "No Fog"
@@ -43,7 +47,7 @@ end)
 Script3.Name = "Script3"
 Script3.Parent = main
 Script3.BackgroundColor3 = Color3.fromRGB(0, 126, 126)
-Script3.Position = UDim2.new(0.160804018, 0, 0.615999997, 0)
+Script3.Position = UDim2.new(0.160804018, 0, 0.499894738, 0)
 Script3.Size = UDim2.new(0, 134, 0, 18)
 Script3.Font = Enum.Font.SourceSans
 Script3.Text = "ESP"
@@ -56,8 +60,8 @@ end)
 Script2.Name = "Script2"
 Script2.Parent = main
 Script2.BackgroundColor3 = Color3.fromRGB(0, 126, 126)
-Script2.Position = UDim2.new(0.160804018, 0, 0.423999995, 0)
-Script2.Size = UDim2.new(0, 134, 0, 18)
+Script2.Position = UDim2.new(0.160804018, 0, 0.326210499, 0)
+Script2.Size = UDim2.new(0, 134, 0, 19)
 Script2.Font = Enum.Font.SourceSans
 Script2.Text = "Crash Server (Spam)"
 Script2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -66,11 +70,10 @@ Script2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/wildsirmonkey/Roblox/main/GGBALLS/nocrashpls'))()
 end)
 
-
 Script4.Name = "Script4"
 Script4.Parent = main
 Script4.BackgroundColor3 = Color3.fromRGB(0, 126, 126)
-Script4.Position = UDim2.new(0.160804018, 0, 0.807999969, 0)
+Script4.Position = UDim2.new(0.160804018, 0, 0.658999979, 0)
 Script4.Size = UDim2.new(0, 134, 0, 18)
 Script4.Font = Enum.Font.SourceSans
 Script4.Text = "Instant Log"
@@ -80,10 +83,22 @@ Script4.MouseButton1Down:connect(function()
 	game:GetService("Players").LocalPlayer:Kick("You instant logged!")
 end)
 
+Script5.Name = "Script5"
+Script5.Parent = main
+Script5.BackgroundColor3 = Color3.fromRGB(0, 126, 126)
+Script5.Position = UDim2.new(0.160804018, 0, 0.81689471, 0)
+Script5.Size = UDim2.new(0, 134, 0, 18)
+Script5.Font = Enum.Font.SourceSans
+Script5.Text = "Fly"
+Script5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Script5.TextSize = 14.000
+Script5.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/wildsirmonkey/Roblox/main/GGBALLS/plane'))()
+end)
 
 -- Scripts:
 
-local function SAMH_fake_script() -- main.LocalScript 
+local function GCTTGE_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local frame = script.Parent -- path to the frame
@@ -92,10 +107,10 @@ local function SAMH_fake_script() -- main.LocalScript
 	-- Visibility
 	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
 		key = key:lower() -- i do this in all my key events, though i don't remember why
-		if key == 't' then -- if key pressed is h
+		if key == 'r' then -- if key pressed is h
 			frame.Visible = not frame.Visible -- flip between visible/invisible
 		end
 	end)
 	
 end
-coroutine.wrap(SAMH_fake_script)()
+coroutine.wrap(GCTTGE_fake_script)()
