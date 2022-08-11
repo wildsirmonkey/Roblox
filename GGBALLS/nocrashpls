@@ -1,0 +1,7 @@
+ while wait(0.1) do
+local args = {
+    [1] = 1
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Currency.DropCurrency.LocalScript.DropSilver:FireServer(unpack(args))
+end 
