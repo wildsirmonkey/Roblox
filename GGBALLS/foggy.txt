@@ -1,0 +1,5 @@
+while true do
+wait()
+game.Lighting.FogEnd = 1000000
+wait()
+end
