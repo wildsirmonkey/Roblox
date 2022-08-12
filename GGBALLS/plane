@@ -1,7 +1,7 @@
 local Settings = {
 	
 	Speed = 30,
-	SprintSpeed = 60,
+	SprintSpeed = 15,
 	ToggleKey = Enum.KeyCode.F1,
 	SprintKey = Enum.KeyCode.LeftControl,
 	
