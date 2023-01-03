@@ -1,11 +1,7 @@
-local SpeedValue = 10
-local SprintSpeedValue = 20
-
-
 local Settings = {
 	
-	Speed = SpeedValue,
-	SprintSpeed = SprintSpeedValue,
+	Speed = 10,
+	SprintSpeed = 20,
 	ToggleKey = Enum.KeyCode.G,
 	SprintKey = Enum.KeyCode.LeftControl,
 	
